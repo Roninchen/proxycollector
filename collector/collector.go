@@ -1,7 +1,7 @@
 package collector
 
 import (
-	"github.com/AceDarkknight/GoProxyCollector/result"
+	"proxycollector/result"
 )
 
 type Collector interface {

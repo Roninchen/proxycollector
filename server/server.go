@@ -3,7 +3,7 @@ package server
 import (
 	"net/http"
 
-	"github.com/AceDarkknight/GoProxyCollector/storage"
+	"proxycollector/storage"
 
 	"github.com/cihub/seelog"
 )

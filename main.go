@@ -3,11 +3,11 @@ package main
 import (
 	"time"
 
-	"github.com/AceDarkknight/GoProxyCollector/collector"
-	"github.com/AceDarkknight/GoProxyCollector/scheduler"
-	"github.com/AceDarkknight/GoProxyCollector/server"
-	"github.com/AceDarkknight/GoProxyCollector/storage"
-	"github.com/AceDarkknight/GoProxyCollector/verifier"
+	"proxycollector/collector"
+	"proxycollector/scheduler"
+	"proxycollector/server"
+	"proxycollector/storage"
+	"proxycollector/verifier"
 
 	"github.com/cihub/seelog"
 )

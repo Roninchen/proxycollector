@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AceDarkknight/GoProxyCollector/collector"
-	"github.com/AceDarkknight/GoProxyCollector/result"
-	"github.com/AceDarkknight/GoProxyCollector/storage"
-	"github.com/AceDarkknight/GoProxyCollector/verifier"
+	"proxycollector/collector"
+	"proxycollector/result"
+	"proxycollector/storage"
+	"proxycollector/verifier"
 
 	"github.com/cihub/seelog"
 )

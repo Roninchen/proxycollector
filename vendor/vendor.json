@@ -3,48 +3,6 @@
 	"ignore": "test",
 	"package": [
 		{
-			"checksumSHA1": "YH/Y30M1E39+3/t623+g6H3lTMQ=",
-			"path": "github.com/AceDarkknight/GoProxyCollector/collector",
-			"revision": "2e1e31f6533c7c1d1ef7a45c238c245cf754527c",
-			"revisionTime": "2018-05-30T13:29:06Z"
-		},
-		{
-			"checksumSHA1": "LefOkICPgousLEF6KsCExIVmWD4=",
-			"path": "github.com/AceDarkknight/GoProxyCollector/result",
-			"revision": "2e1e31f6533c7c1d1ef7a45c238c245cf754527c",
-			"revisionTime": "2018-05-30T13:29:06Z"
-		},
-		{
-			"checksumSHA1": "86e4MCtlq6uEcjqfGlqm7KncvUA=",
-			"path": "github.com/AceDarkknight/GoProxyCollector/scheduler",
-			"revision": "2e1e31f6533c7c1d1ef7a45c238c245cf754527c",
-			"revisionTime": "2018-05-30T13:29:06Z"
-		},
-		{
-			"checksumSHA1": "bZJp+vS95Ya4VxsWS/utrX9gNcw=",
-			"path": "github.com/AceDarkknight/GoProxyCollector/server",
-			"revision": "2e1e31f6533c7c1d1ef7a45c238c245cf754527c",
-			"revisionTime": "2018-05-30T13:29:06Z"
-		},
-		{
-			"checksumSHA1": "RNWYqfPuuVpGs1XH66ViaOx1dc4=",
-			"path": "github.com/AceDarkknight/GoProxyCollector/storage",
-			"revision": "2e1e31f6533c7c1d1ef7a45c238c245cf754527c",
-			"revisionTime": "2018-05-30T13:29:06Z"
-		},
-		{
-			"checksumSHA1": "iQLxI4t46KsB3NpVZ3a25P/BXZo=",
-			"path": "github.com/AceDarkknight/GoProxyCollector/util",
-			"revision": "2e1e31f6533c7c1d1ef7a45c238c245cf754527c",
-			"revisionTime": "2018-05-30T13:29:06Z"
-		},
-		{
-			"checksumSHA1": "GH5zNreg7wDM1/xbcBEAfcbfDo8=",
-			"path": "github.com/AceDarkknight/GoProxyCollector/verifier",
-			"revision": "2e1e31f6533c7c1d1ef7a45c238c245cf754527c",
-			"revisionTime": "2018-05-30T13:29:06Z"
-		},
-		{
 			"checksumSHA1": "Txs/GYMZts/ajdoemTr8tQCSas4=",
 			"path": "github.com/PuerkitoBio/goquery",
 			"revision": "9b813b2309289e705f8491372cbe75966cbbb48b",
