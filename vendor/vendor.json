@@ -1,0 +1,143 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "YH/Y30M1E39+3/t623+g6H3lTMQ=",
+			"path": "github.com/AceDarkknight/GoProxyCollector/collector",
+			"revision": "2e1e31f6533c7c1d1ef7a45c238c245cf754527c",
+			"revisionTime": "2018-05-30T13:29:06Z"
+		},
+		{
+			"checksumSHA1": "LefOkICPgousLEF6KsCExIVmWD4=",
+			"path": "github.com/AceDarkknight/GoProxyCollector/result",
+			"revision": "2e1e31f6533c7c1d1ef7a45c238c245cf754527c",
+			"revisionTime": "2018-05-30T13:29:06Z"
+		},
+		{
+			"checksumSHA1": "86e4MCtlq6uEcjqfGlqm7KncvUA=",
+			"path": "github.com/AceDarkknight/GoProxyCollector/scheduler",
+			"revision": "2e1e31f6533c7c1d1ef7a45c238c245cf754527c",
+			"revisionTime": "2018-05-30T13:29:06Z"
+		},
+		{
+			"checksumSHA1": "bZJp+vS95Ya4VxsWS/utrX9gNcw=",
+			"path": "github.com/AceDarkknight/GoProxyCollector/server",
+			"revision": "2e1e31f6533c7c1d1ef7a45c238c245cf754527c",
+			"revisionTime": "2018-05-30T13:29:06Z"
+		},
+		{
+			"checksumSHA1": "RNWYqfPuuVpGs1XH66ViaOx1dc4=",
+			"path": "github.com/AceDarkknight/GoProxyCollector/storage",
+			"revision": "2e1e31f6533c7c1d1ef7a45c238c245cf754527c",
+			"revisionTime": "2018-05-30T13:29:06Z"
+		},
+		{
+			"checksumSHA1": "iQLxI4t46KsB3NpVZ3a25P/BXZo=",
+			"path": "github.com/AceDarkknight/GoProxyCollector/util",
+			"revision": "2e1e31f6533c7c1d1ef7a45c238c245cf754527c",
+			"revisionTime": "2018-05-30T13:29:06Z"
+		},
+		{
+			"checksumSHA1": "GH5zNreg7wDM1/xbcBEAfcbfDo8=",
+			"path": "github.com/AceDarkknight/GoProxyCollector/verifier",
+			"revision": "2e1e31f6533c7c1d1ef7a45c238c245cf754527c",
+			"revisionTime": "2018-05-30T13:29:06Z"
+		},
+		{
+			"checksumSHA1": "Txs/GYMZts/ajdoemTr8tQCSas4=",
+			"path": "github.com/PuerkitoBio/goquery",
+			"revision": "9b813b2309289e705f8491372cbe75966cbbb48b",
+			"revisionTime": "2019-01-08T12:15:36Z"
+		},
+		{
+			"checksumSHA1": "7DQlhUmi8waYHuk3kvrWiTLVygM=",
+			"path": "github.com/andybalholm/cascadia",
+			"revision": "680b6a57bda4f657485ad44bdea42342ead737bc",
+			"revisionTime": "2018-10-12T15:44:24Z"
+		},
+		{
+			"checksumSHA1": "kNtoxGIa3rApgMx/PREQeKqjKw8=",
+			"path": "github.com/axgle/mahonia",
+			"revision": "3358181d7394e26beccfae0ffde05193ef3be33a",
+			"revisionTime": "2018-02-08T00:28:26Z"
+		},
+		{
+			"checksumSHA1": "20Pind5XCrfZL/F0oibWfd9gotA=",
+			"path": "github.com/boltdb/bolt",
+			"revision": "fd01fc79c553a8e99d512a07e8e0c63d4a3ccfc5",
+			"revisionTime": "2018-03-02T18:00:52Z"
+		},
+		{
+			"checksumSHA1": "1bK29RcAjCAMCYS2HS3O18w4m8k=",
+			"path": "github.com/cihub/seelog",
+			"revision": "f561c5e57575bb1e0a2167028b7339b3a8d16fb4",
+			"revisionTime": "2017-01-30T13:45:32Z"
+		},
+		{
+			"checksumSHA1": "iMU6SM/jawaCOJnyvR5/w8C/C1w=",
+			"path": "github.com/cihub/seelog/archive",
+			"revision": "f561c5e57575bb1e0a2167028b7339b3a8d16fb4",
+			"revisionTime": "2017-01-30T13:45:32Z"
+		},
+		{
+			"checksumSHA1": "oSd7EVei192qS3uYyCAMx9zV3Y8=",
+			"path": "github.com/cihub/seelog/archive/gzip",
+			"revision": "f561c5e57575bb1e0a2167028b7339b3a8d16fb4",
+			"revisionTime": "2017-01-30T13:45:32Z"
+		},
+		{
+			"checksumSHA1": "emesF9mCsIQC59VUE2lvjZYpAHU=",
+			"path": "github.com/cihub/seelog/archive/tar",
+			"revision": "f561c5e57575bb1e0a2167028b7339b3a8d16fb4",
+			"revisionTime": "2017-01-30T13:45:32Z"
+		},
+		{
+			"checksumSHA1": "TXLSkZsRlMifg3mg9+6QgEZJ6m4=",
+			"path": "github.com/cihub/seelog/archive/zip",
+			"revision": "f561c5e57575bb1e0a2167028b7339b3a8d16fb4",
+			"revisionTime": "2017-01-30T13:45:32Z"
+		},
+		{
+			"checksumSHA1": "M0j/wtIbmNQtHjBswvdUKcrBQzc=",
+			"path": "github.com/moul/http2curl",
+			"revision": "faeffb3553568c6ecaa9c103c09dea941ca9c570",
+			"revisionTime": "2018-12-27T15:39:05Z"
+		},
+		{
+			"checksumSHA1": "zRbXKfobTcrO1AADk55NAnBlbtQ=",
+			"path": "github.com/parnurzeal/gorequest",
+			"revision": "9433d8c3b4c5f3bbeca487a6a410008eab3ce5ee",
+			"revisionTime": "2018-11-08T14:25:13Z"
+		},
+		{
+			"checksumSHA1": "d6BycwPpKXW09I/tXMqcItE8SA4=",
+			"path": "github.com/pkg/errors",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "UrM9Sbp5q0sBFxqb5iMhqiPpXII=",
+			"path": "golang.org/x/net/html",
+			"revision": "1e06a53dbb7e2ed46e91183f219db23c6943c532",
+			"revisionTime": "2018-12-20T03:20:21Z"
+		},
+		{
+			"checksumSHA1": "XtSbs1gpyaEsIqf6VRhJsgOQe5U=",
+			"path": "golang.org/x/net/html/atom",
+			"revision": "1e06a53dbb7e2ed46e91183f219db23c6943c532",
+			"revisionTime": "2018-12-20T03:20:21Z"
+		},
+		{
+			"checksumSHA1": "bhX9GCMtACwF4bEFcVFRoHLz7xQ=",
+			"path": "golang.org/x/net/publicsuffix",
+			"revision": "1e06a53dbb7e2ed46e91183f219db23c6943c532",
+			"revisionTime": "2018-12-20T03:20:21Z"
+		},
+		{
+			"checksumSHA1": "gVXmdUMIAaTruC6bf6GKEDYV1CA=",
+			"path": "golang.org/x/sys/unix",
+			"revision": ""
+		}
+	],
+	"rootPath": "proxycollector"
+}
