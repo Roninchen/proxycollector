@@ -1,9 +1,11 @@
 package collector
 
 import (
+	"encoding/json"
 	"errors"
 	"fmt"
 	"net/http"
+	"proxycollector/storage"
 	"regexp"
 	"strconv"
 	"strings"
@@ -71,20 +73,24 @@ func (c *RegexCollector) Name() string {
 }
 
 // TODO: Support to more websites.
-func (c *RegexCollector) Collect(ch chan<- *result.Result) []error {
+func (c *RegexCollector) Collect(ch chan<- *result.Result,storage storage.Storage) []error {
 	// To avoid deadlock, channel must be closed.
 	defer close(ch)
-
-	response, bodyString, errs := gorequest.New().Get(c.currentUrl).Set("User-Agent", util.RandomUA()).End()
-	if response.Body != nil {
-		defer response.Body.Close()
+ 	proxy :=""
+	var ipResult = new(result.Result)
+	err := json.Unmarshal(storage.GetRandomOne(), &ipResult)
+	if err==nil && len(ipResult.Ip)>0 {
+		proxy = "http://" + ipResult.Ip + ":" + strconv.Itoa(ipResult.Port)
 	}
-
+	seelog.Info("regexCollector.go使用代理:",proxy)
+	response, bodyString, errs := CollectRequest(c.currentUrl, proxy)
 	if len(errs) > 0 {
 		seelog.Errorf("%+v", errs)
 		return errs
 	}
-
+	if response.Body != nil {
+		defer response.Body.Close()
+	}
 	if response.StatusCode != 200 {
 		errorMessage := fmt.Sprintf("GET %s failed, status code:%s", c.currentUrl, http.StatusText(response.StatusCode))
 		seelog.Error(errorMessage)
@@ -127,3 +133,22 @@ func (c *RegexCollector) Collect(ch chan<- *result.Result) []error {
 	seelog.Debugf("finish collect url:%s", c.currentUrl)
 	return nil
 }
+
+func CollectRequest(currentUrl string, proxy string) (gorequest.Response, string, []error) {
+
+	if proxy=="" {
+		response, bodyString, errs := gorequest.New().
+			Get(currentUrl).
+			Set("User-Agent", util.RandomUA()).
+			End()
+		return response, bodyString, errs
+	}else {
+		response, bodyString, errs := gorequest.New().
+			Get(currentUrl).
+			Proxy(proxy).
+			Set("User-Agent", util.RandomUA()).
+			End()
+		return response, bodyString, errs
+	}
+}
+

@@ -35,7 +35,7 @@ func NewServer(storage storage.Storage) {
 func getIp(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "GET" {
 		w.Header().Add("content-type", "application/json")
-		if s == nil {
+		if  s == nil {
 			w.WriteHeader(http.StatusInternalServerError)
 		}
 

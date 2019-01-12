@@ -28,7 +28,7 @@ func runCollector(collector collector.Collector, storage storage.Storage) {
 		}
 
 		// Collect.
-		go collector.Collect(resultChan)
+		go collector.Collect(resultChan,storage)
 
 		verifier.VerifyAndSave(resultChan, storage)
 

@@ -1,9 +1,12 @@
 package collector
 
 import (
+	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/astaxie/beego/logs"
 	"net/http"
+	"proxycollector/storage"
 	"regexp"
 	"strconv"
 	"strings"
@@ -14,7 +17,6 @@ import (
 	"github.com/PuerkitoBio/goquery"
 	"github.com/axgle/mahonia"
 	"github.com/cihub/seelog"
-	"github.com/parnurzeal/gorequest"
 )
 
 // SelectorCollector will use goquery(like jquery) to get the element we need.
@@ -86,20 +88,26 @@ func (c *SelectorCollector) Name() string {
 	return c.configuration.Name
 }
 
-func (c *SelectorCollector) Collect(ch chan<- *result.Result) []error {
+func (c *SelectorCollector) Collect(ch chan<- *result.Result,storage storage.Storage) []error {
 	// To avoid deadlock, channel must be closed.
 	defer close(ch)
-
-	response, _, errs := gorequest.New().Get(c.currentUrl).Set("User-Agent", util.RandomUA()).End()
-	if response.Body != nil {
-		defer response.Body.Close()
+	logs.Info("请求前打印链接："+c.currentUrl)
+	proxy :=""
+	var ipResult = new(result.Result)
+	err := json.Unmarshal(storage.GetRandomOne(), &ipResult)
+	if err==nil && len(ipResult.Ip)>0 {
+		proxy = "http://" + ipResult.Ip + ":" + strconv.Itoa(ipResult.Port)
 	}
-
+	seelog.Info("regexCollector.go使用代理:",proxy)
+	response, _, errs := CollectRequest(c.currentUrl, proxy)
+	//logs.Info("bodyString:"+bodyString)
 	if len(errs) > 0 {
 		seelog.Errorf("%+v", errs)
 		return errs
 	}
-
+	if response.Body != nil {
+		defer response.Body.Close()
+	}
 	if response.StatusCode != 200 {
 		errorMessage := fmt.Sprintf("GET %s failed, status code:%s", c.currentUrl, http.StatusText(response.StatusCode))
 		seelog.Error(errorMessage)
