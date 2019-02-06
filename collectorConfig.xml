@@ -14,7 +14,15 @@
         <!--</valueNameRuleMap>-->
     <!--</config>-->
     <config name="89ip">
-        <urlFormat>http://www.89ip.cn/tiqv.php?sxb=&amp;tqsl=20&amp;ports=&amp;ktip=&amp;xl=on&amp;submit=%CC%E1++%C8%A1</urlFormat>
+        <urlFormat>http://www.89ip.cn/tqdl.html?api=1&amp;num=1000&amp;port=&amp;address=&amp;isp=</urlFormat>
+        <collectType>1</collectType>
+        <charset>utf-8</charset>
+        <valueNameRuleMap>
+            <item name="ip" rule="((?:(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))\.){3}(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))):[1-9]\d*"/>
+        </valueNameRuleMap>
+    </config>
+    <config name="66ip">
+        <urlFormat>http://www.66ip.cn/nmtq.php?getnum=300&amp;isp=0&amp;anonymoustype=0&amp;start=&amp;ports=&amp;export=&amp;ipaddress=&amp;area=0&amp;proxytype=0&amp;api=66ip</urlFormat>
         <collectType>1</collectType>
         <charset>utf-8</charset>
         <valueNameRuleMap>
