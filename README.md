@@ -8,7 +8,7 @@ GoProxyCollector is a lightweight, out-of-box proxy collector written in Go.
 - Make sure your Go version >= 1.9
 - Download
 ```
-go get -u github.com/AceDarkknight/GoProxyCollector
+go get -u github.com/Roninchen/proxycollector
 ```
 - Start up
 ```
@@ -48,7 +48,7 @@ Currently this project will fetch proxy from these website.
 ## Extension
 If you want to fetch from other website, you can modify the configuration file.
 ```
-github.com\AceDarkknight\GoProxyCollector\collectorConfig.xml
+github.com\Roninchen\proxycollector\collectorConfig.xml
 ```
 
 Here is a standard config example:
